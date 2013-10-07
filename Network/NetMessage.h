@@ -1,16 +1,16 @@
-#ifndef SDLNETWORK_H_
-#define SDLNETWORK_H_
+#ifndef SDLNETMESSAGE_H_
+#define SDLNETMESSAGE_H_
 
 #include <iostream>
 #include <string>
 #include <cstring>
-#include "SDLNetwork.SDLNETWORK_H_"
+#include "SDLNetwork.h"
 
 #ifdef WIN32
-	#include <"SDL_net.h">
-	#include <"windows.h">
+    #include <"SDL_net.h">
+    #include <"windows.h">
 #else
-	#include <SDL/SDL_net.h>
+    #include <SDL/SDL_net.h>
 #endif
 
 typedef char charbuf[256];
@@ -40,3 +40,5 @@ class NetMessage
 
 		void reset(); //Change message states to empty
 };
+
+#endif

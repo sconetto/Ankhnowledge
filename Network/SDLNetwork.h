@@ -6,10 +6,10 @@
 #include <cstring>
 
 #ifdef WIN32
-	#include <"SDL_net.h">
-	#include <"windows.h">
+    #include <"SDL_net.h">
+    #include <"windows.h">
 #else
-	#include <SDL/SDL_net.h>
+    #include <SDL/SDL_net.h>
 #endif
 
 using namespace std;

@@ -8,10 +8,10 @@ HEADERS = $(wildcard *.h)
 all: init
 
 init: $(CPPSOURCES: .cpp= .o)
-	g++ -lSDL -o $@ $^ $(SDL_CFLAGS) $(SDL_LDFLAGS) $(STD_FLAGS)
+	g++ -lSDL -o $@ $^ $(SDL_CFLAGS) $(SDL_LDFLAGS) -lSDL_net $(STD_FLAGS)
 
 %.o: %.cpp $(HEADERS)
-	g++ $(STD_FLAGS) -c -o $@ $< $(SDL_CFLAGS) $(SDL_LDFLAGS)
+	g++ -lSDL_net $(STD_FLAGS) -c -o $@ $< $(SDL_CFLAGS) $(SDL_LDFLAGS)
 
 clean:
 	-rm -rf *.o init *~

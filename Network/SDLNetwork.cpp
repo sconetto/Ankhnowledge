@@ -8,6 +8,7 @@
     #include <SDL/SDL_net.h>
 #endif
 
+
 using namespace std;
 
 void SDLNetwork::RunException(const string& message)

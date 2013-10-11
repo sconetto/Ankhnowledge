@@ -7,16 +7,16 @@ HEADERS = $(wildcard *.h)
 
 all: init
 
-init: $(CPPSOURCES: .cpp= .o)
-	g++ -lSDL -o $@ $^ $(SDL_CFLAGS) $(SDL_LDFLAGS) -lSDL_net $(STD_FLAGS)
+init: $(CPPSOURCES:.cpp=.o)
+	rm main.o
+	g++ -lSDL_net -lSDL -o $@ main.cpp $(subst main.o, ,$^) $(STD_FLAGS) $(SDL_LDFLAGS) $(SDL_CFLAGS)
 
 %.o: %.cpp $(HEADERS)
-	g++ -lSDL_net $(STD_FLAGS) -c -o $@ $< $(SDL_CFLAGS) $(SDL_LDFLAGS)
-
+	g++ $(STD_FLAGS) -c $^ $(SDL_LDFLAGS) $(SDL_CFLAGS) $(STD_FLAGS) -lSDL -lSDL_net
+	
 clean:
-	-rm -rf *.o init *~
+	-rm -rf *.o networklib.a *~
 
 # -include $(CPPSOURCES: .cpp= .d)
-
 # %.d: %.cpp
 # 	g++ $< -MM -MT '$*.o $*.d' -MD $(SDL_CFLAGS) $(SDL_LDFLAGS) 

@@ -57,14 +57,3 @@ void NetMessage::UnLoadBytes(charbuf& output)
         output[i] = buffer[i];
     reset();
 }
-
-int main()
-{
-    SDLNetwork::InitializeNetwork();
-    NetMessage message;
-    
-    cout << "Inicializado NetWork" << endl;
-
-    SDLNetwork::QuitNetwork();
-
-}

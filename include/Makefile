@@ -59,7 +59,10 @@ subdir = include
 DIST_COMMON = $(include_HEADERS) $(srcdir)/Makefile.am \
 	$(srcdir)/Makefile.in $(srcdir)/config.h.in
 ACLOCAL_M4 = $(top_srcdir)/aclocal.m4
-am__aclocal_m4_deps = $(top_srcdir)/configure.in
+am__aclocal_m4_deps = $(top_srcdir)/m4/libtool.m4 \
+	$(top_srcdir)/m4/ltoptions.m4 $(top_srcdir)/m4/ltsugar.m4 \
+	$(top_srcdir)/m4/ltversion.m4 $(top_srcdir)/m4/lt~obsolete.m4 \
+	$(top_srcdir)/configure.in
 am__configure_deps = $(am__aclocal_m4_deps) $(CONFIGURE_DEPENDENCIES) \
 	$(ACLOCAL_M4)
 mkinstalldirs = $(install_sh) -d
@@ -105,13 +108,13 @@ HEADERS = $(include_HEADERS)
 ETAGS = etags
 CTAGS = ctags
 DISTFILES = $(DIST_COMMON) $(DIST_SOURCES) $(TEXINFOS) $(EXTRA_DIST)
-ACLOCAL = ${SHELL} /home/arthur/Documentos/Workspace/Disciplinas/Jogos/Ankhnowledge/config/missing --run aclocal-1.11
+ACLOCAL = ${SHELL} /home/al/branch/Ankhnowledge/config/missing --run aclocal-1.11
 AMTAR = $${TAR-tar}
 AR = ar
-AUTOCONF = ${SHELL} /home/arthur/Documentos/Workspace/Disciplinas/Jogos/Ankhnowledge/config/missing --run autoconf
-AUTOHEADER = ${SHELL} /home/arthur/Documentos/Workspace/Disciplinas/Jogos/Ankhnowledge/config/missing --run autoheader
-AUTOMAKE = ${SHELL} /home/arthur/Documentos/Workspace/Disciplinas/Jogos/Ankhnowledge/config/missing --run automake-1.11
-AWK = gawk
+AUTOCONF = ${SHELL} /home/al/branch/Ankhnowledge/config/missing --run autoconf
+AUTOHEADER = ${SHELL} /home/al/branch/Ankhnowledge/config/missing --run autoheader
+AUTOMAKE = ${SHELL} /home/al/branch/Ankhnowledge/config/missing --run automake-1.11
+AWK = mawk
 CC = gcc
 CCDEPMODE = depmode=gcc3
 CFLAGS = -g -O2
@@ -150,7 +153,7 @@ LTLIBOBJS =
 LT_CURRENT = 0
 LT_RELEASE = 0.0.1
 LT_REVISION = 0
-MAKEINFO = ${SHELL} /home/arthur/Documentos/Workspace/Disciplinas/Jogos/Ankhnowledge/config/missing --run makeinfo
+MAKEINFO = ${SHELL} /home/al/branch/Ankhnowledge/config/missing --run makeinfo
 MANIFEST_TOOL = :
 MKDIR_P = /bin/mkdir -p
 NM = /usr/bin/nm -B
@@ -173,10 +176,10 @@ SET_MAKE =
 SHELL = /bin/bash
 STRIP = strip
 VERSION = 0.0.1
-abs_builddir = /home/arthur/Documentos/Workspace/Disciplinas/Jogos/Ankhnowledge/include
-abs_srcdir = /home/arthur/Documentos/Workspace/Disciplinas/Jogos/Ankhnowledge/include
-abs_top_builddir = /home/arthur/Documentos/Workspace/Disciplinas/Jogos/Ankhnowledge
-abs_top_srcdir = /home/arthur/Documentos/Workspace/Disciplinas/Jogos/Ankhnowledge
+abs_builddir = /home/al/branch/Ankhnowledge/include
+abs_srcdir = /home/al/branch/Ankhnowledge/include
+abs_top_builddir = /home/al/branch/Ankhnowledge
+abs_top_srcdir = /home/al/branch/Ankhnowledge
 ac_config_aux_dir = 
 ac_ct_AR = ar
 ac_ct_CC = gcc
@@ -207,7 +210,7 @@ host_vendor = pc
 htmldir = ${docdir}
 includedir = ${prefix}/include
 infodir = ${datarootdir}/info
-install_sh = ${SHELL} /home/arthur/Documentos/Workspace/Disciplinas/Jogos/Ankhnowledge/config/install-sh
+install_sh = ${SHELL} /home/al/branch/Ankhnowledge/config/install-sh
 libdir = ${exec_prefix}/lib
 libexecdir = ${exec_prefix}/libexec
 localedir = ${datarootdir}/locale

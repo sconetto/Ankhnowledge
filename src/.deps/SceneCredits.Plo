@@ -120,7 +120,8 @@ SceneCredits.lo: SceneCredits.cpp ../include/SceneCredits.h \
  ../include/Character.h ../include/Animation.h ../include/Tile.h \
  ../include/Block.h ../include/Map.h ../include/SceneGameOver.h \
  ../include/SceneCredits.h ../include/SceneOptions.h ../include/Slider.h \
- ../include/OptionsController.h
+ ../include/OptionsController.h ../include/TextObject.h \
+ ../include/TextObject.h
 
 ../include/SceneCredits.h:
 
@@ -493,3 +494,7 @@ SceneCredits.lo: SceneCredits.cpp ../include/SceneCredits.h \
 ../include/Slider.h:
 
 ../include/OptionsController.h:
+
+../include/TextObject.h:
+
+../include/TextObject.h:

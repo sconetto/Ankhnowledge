@@ -118,9 +118,9 @@ ScenePhaseOne.lo: ScenePhaseOne.cpp ../include/ScenePhaseOne.h \
  /usr/include/c++/4.7/bits/ostream.tcc /usr/include/c++/4.7/istream \
  /usr/include/c++/4.7/bits/istream.tcc ../include/ScenePhaseOne.h \
  ../include/SceneGameOver.h ../include/SceneCredits.h \
- ../include/SceneOptions.h ../include/Slider.h \
- ../include/OptionsController.h ../include/Character.h \
- ../include/Animation.h ../include/Tile.h ../include/Block.h \
+ ../include/TextObject.h ../include/Animation.h ../include/SceneOptions.h \
+ ../include/Slider.h ../include/OptionsController.h \
+ ../include/Character.h ../include/Tile.h ../include/Block.h \
  ../include/Map.h
 
 ../include/ScenePhaseOne.h:
@@ -479,6 +479,10 @@ ScenePhaseOne.lo: ScenePhaseOne.cpp ../include/ScenePhaseOne.h \
 
 ../include/SceneCredits.h:
 
+../include/TextObject.h:
+
+../include/Animation.h:
+
 ../include/SceneOptions.h:
 
 ../include/Slider.h:
@@ -486,8 +490,6 @@ ScenePhaseOne.lo: ScenePhaseOne.cpp ../include/ScenePhaseOne.h \
 ../include/OptionsController.h:
 
 ../include/Character.h:
-
-../include/Animation.h:
 
 ../include/Tile.h:
 

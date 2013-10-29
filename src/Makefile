@@ -62,7 +62,10 @@ subdir = src
 DIST_COMMON = $(dist_Ankhnowledge_DATA) $(srcdir)/Makefile.am \
 	$(srcdir)/Makefile.in
 ACLOCAL_M4 = $(top_srcdir)/aclocal.m4
-am__aclocal_m4_deps = $(top_srcdir)/configure.in
+am__aclocal_m4_deps = $(top_srcdir)/m4/libtool.m4 \
+	$(top_srcdir)/m4/ltoptions.m4 $(top_srcdir)/m4/ltsugar.m4 \
+	$(top_srcdir)/m4/ltversion.m4 $(top_srcdir)/m4/lt~obsolete.m4 \
+	$(top_srcdir)/configure.in
 am__configure_deps = $(am__aclocal_m4_deps) $(CONFIGURE_DEPENDENCIES) \
 	$(ACLOCAL_M4)
 mkinstalldirs = $(install_sh) -d
@@ -107,7 +110,7 @@ am_libitem_la_OBJECTS = Animation.lo GameManager.lo AudioHandler.lo \
 	SceneLegal.lo SceneLogo.lo SceneMainMenu.lo ScenePhaseOne.lo \
 	SceneTechnology.lo SceneThirdParty.lo SceneGameOver.lo \
 	SceneCredits.lo SceneOptions.lo Shape.lo SplashScreen.lo \
-	Sprite.lo Slider.lo Tile.lo
+	Sprite.lo Slider.lo Tile.lo TextObject.lo
 libitem_la_OBJECTS = $(am_libitem_la_OBJECTS)
 libitem_la_LINK = $(LIBTOOL) --tag=CXX $(AM_LIBTOOLFLAGS) \
 	$(LIBTOOLFLAGS) --mode=link $(CXXLD) $(AM_CXXFLAGS) \
@@ -140,13 +143,13 @@ DATA = $(dist_Ankhnowledge_DATA)
 ETAGS = etags
 CTAGS = ctags
 DISTFILES = $(DIST_COMMON) $(DIST_SOURCES) $(TEXINFOS) $(EXTRA_DIST)
-ACLOCAL = ${SHELL} /home/arthur/Documentos/Workspace/Disciplinas/Jogos/Ankhnowledge/config/missing --run aclocal-1.11
+ACLOCAL = ${SHELL} /home/al/branch/Ankhnowledge/config/missing --run aclocal-1.11
 AMTAR = $${TAR-tar}
 AR = ar
-AUTOCONF = ${SHELL} /home/arthur/Documentos/Workspace/Disciplinas/Jogos/Ankhnowledge/config/missing --run autoconf
-AUTOHEADER = ${SHELL} /home/arthur/Documentos/Workspace/Disciplinas/Jogos/Ankhnowledge/config/missing --run autoheader
-AUTOMAKE = ${SHELL} /home/arthur/Documentos/Workspace/Disciplinas/Jogos/Ankhnowledge/config/missing --run automake-1.11
-AWK = gawk
+AUTOCONF = ${SHELL} /home/al/branch/Ankhnowledge/config/missing --run autoconf
+AUTOHEADER = ${SHELL} /home/al/branch/Ankhnowledge/config/missing --run autoheader
+AUTOMAKE = ${SHELL} /home/al/branch/Ankhnowledge/config/missing --run automake-1.11
+AWK = mawk
 CC = gcc
 CCDEPMODE = depmode=gcc3
 CFLAGS = -g -O2
@@ -185,7 +188,7 @@ LTLIBOBJS =
 LT_CURRENT = 0
 LT_RELEASE = 0.0.1
 LT_REVISION = 0
-MAKEINFO = ${SHELL} /home/arthur/Documentos/Workspace/Disciplinas/Jogos/Ankhnowledge/config/missing --run makeinfo
+MAKEINFO = ${SHELL} /home/al/branch/Ankhnowledge/config/missing --run makeinfo
 MANIFEST_TOOL = :
 MKDIR_P = /bin/mkdir -p
 NM = /usr/bin/nm -B
@@ -208,10 +211,10 @@ SET_MAKE =
 SHELL = /bin/bash
 STRIP = strip
 VERSION = 0.0.1
-abs_builddir = /home/arthur/Documentos/Workspace/Disciplinas/Jogos/Ankhnowledge/src
-abs_srcdir = /home/arthur/Documentos/Workspace/Disciplinas/Jogos/Ankhnowledge/src
-abs_top_builddir = /home/arthur/Documentos/Workspace/Disciplinas/Jogos/Ankhnowledge
-abs_top_srcdir = /home/arthur/Documentos/Workspace/Disciplinas/Jogos/Ankhnowledge
+abs_builddir = /home/al/branch/Ankhnowledge/src
+abs_srcdir = /home/al/branch/Ankhnowledge/src
+abs_top_builddir = /home/al/branch/Ankhnowledge
+abs_top_srcdir = /home/al/branch/Ankhnowledge
 ac_config_aux_dir = 
 ac_ct_AR = ar
 ac_ct_CC = gcc
@@ -242,7 +245,7 @@ host_vendor = pc
 htmldir = ${docdir}
 includedir = ${prefix}/include
 infodir = ${datarootdir}/info
-install_sh = ${SHELL} /home/arthur/Documentos/Workspace/Disciplinas/Jogos/Ankhnowledge/config/install-sh
+install_sh = ${SHELL} /home/al/branch/Ankhnowledge/config/install-sh
 libdir = ${exec_prefix}/lib
 libexecdir = ${exec_prefix}/libexec
 localedir = ${datarootdir}/locale
@@ -274,7 +277,7 @@ lib_LTLIBRARIES = libitem.la
 libitem_la_LDFLAGS = -static
 
 # Library sources
-libitem_la_SOURCES = Animation.cpp GameManager.cpp AudioHandler.cpp Button.cpp Block.cpp Character.cpp FadeHandler.cpp FadeScreen.cpp GameObject.cpp InputManager.cpp Map.cpp MainMenuButHandler.cpp Network.cpp OptionsController.cpp SDLBase.cpp Scene.cpp SceneLegal.cpp SceneLogo.cpp SceneMainMenu.cpp ScenePhaseOne.cpp SceneTechnology.cpp SceneThirdParty.cpp SceneGameOver.cpp SceneCredits.cpp SceneOptions.cpp Shape.cpp SplashScreen.cpp Sprite.cpp Slider.cpp Tile.cpp 
+libitem_la_SOURCES = Animation.cpp GameManager.cpp AudioHandler.cpp Button.cpp Block.cpp Character.cpp FadeHandler.cpp FadeScreen.cpp GameObject.cpp InputManager.cpp Map.cpp MainMenuButHandler.cpp Network.cpp OptionsController.cpp SDLBase.cpp Scene.cpp SceneLegal.cpp SceneLogo.cpp SceneMainMenu.cpp ScenePhaseOne.cpp SceneTechnology.cpp SceneThirdParty.cpp SceneGameOver.cpp SceneCredits.cpp SceneOptions.cpp Shape.cpp SplashScreen.cpp Sprite.cpp Slider.cpp Tile.cpp TextObject.cpp
 
 # Libraries needed to build our library
 libitem_la_LIBADD = -lSDL -lSDLmain -lSDL_image -lSDL_ttf
@@ -472,6 +475,7 @@ include ./$(DEPDIR)/Shape.Plo
 include ./$(DEPDIR)/Slider.Plo
 include ./$(DEPDIR)/SplashScreen.Plo
 include ./$(DEPDIR)/Sprite.Plo
+include ./$(DEPDIR)/TextObject.Plo
 include ./$(DEPDIR)/Tile.Plo
 include ./$(DEPDIR)/main.Po
 

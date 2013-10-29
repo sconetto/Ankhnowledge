@@ -10,6 +10,7 @@
 #include "Scene.h"
 #include "Sprite.h"
 #include "SplashScreen.h"
+#include "TextObject.h"
 #include <string>
 
 
@@ -21,7 +22,8 @@ public:
 	void Exit();
 
 private:
-	Sprite * splashSprite;
+	Sprite * splashSprite, *textSprite;
+	TextObject * text;
 };
 
 #endif /* SCENECREDITS_H_ */

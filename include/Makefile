@@ -105,13 +105,13 @@ HEADERS = $(include_HEADERS)
 ETAGS = etags
 CTAGS = ctags
 DISTFILES = $(DIST_COMMON) $(DIST_SOURCES) $(TEXINFOS) $(EXTRA_DIST)
-ACLOCAL = ${SHELL} /home/al/IJE/Ankhnowledge/config/missing --run aclocal-1.11
+ACLOCAL = ${SHELL} /home/arthur/Documentos/Workspace/Disciplinas/Jogos/Ankhnowledge/config/missing --run aclocal-1.11
 AMTAR = $${TAR-tar}
 AR = ar
-AUTOCONF = ${SHELL} /home/al/IJE/Ankhnowledge/config/missing --run autoconf
-AUTOHEADER = ${SHELL} /home/al/IJE/Ankhnowledge/config/missing --run autoheader
-AUTOMAKE = ${SHELL} /home/al/IJE/Ankhnowledge/config/missing --run automake-1.11
-AWK = mawk
+AUTOCONF = ${SHELL} /home/arthur/Documentos/Workspace/Disciplinas/Jogos/Ankhnowledge/config/missing --run autoconf
+AUTOHEADER = ${SHELL} /home/arthur/Documentos/Workspace/Disciplinas/Jogos/Ankhnowledge/config/missing --run autoheader
+AUTOMAKE = ${SHELL} /home/arthur/Documentos/Workspace/Disciplinas/Jogos/Ankhnowledge/config/missing --run automake-1.11
+AWK = gawk
 CC = gcc
 CCDEPMODE = depmode=gcc3
 CFLAGS = -g -O2
@@ -150,7 +150,7 @@ LTLIBOBJS =
 LT_CURRENT = 0
 LT_RELEASE = 0.0.1
 LT_REVISION = 0
-MAKEINFO = ${SHELL} /home/al/IJE/Ankhnowledge/config/missing --run makeinfo
+MAKEINFO = ${SHELL} /home/arthur/Documentos/Workspace/Disciplinas/Jogos/Ankhnowledge/config/missing --run makeinfo
 MANIFEST_TOOL = :
 MKDIR_P = /bin/mkdir -p
 NM = /usr/bin/nm -B
@@ -173,10 +173,10 @@ SET_MAKE =
 SHELL = /bin/bash
 STRIP = strip
 VERSION = 0.0.1
-abs_builddir = /home/al/IJE/Ankhnowledge/include
-abs_srcdir = /home/al/IJE/Ankhnowledge/include
-abs_top_builddir = /home/al/IJE/Ankhnowledge
-abs_top_srcdir = /home/al/IJE/Ankhnowledge
+abs_builddir = /home/arthur/Documentos/Workspace/Disciplinas/Jogos/Ankhnowledge/include
+abs_srcdir = /home/arthur/Documentos/Workspace/Disciplinas/Jogos/Ankhnowledge/include
+abs_top_builddir = /home/arthur/Documentos/Workspace/Disciplinas/Jogos/Ankhnowledge
+abs_top_srcdir = /home/arthur/Documentos/Workspace/Disciplinas/Jogos/Ankhnowledge
 ac_config_aux_dir = 
 ac_ct_AR = ar
 ac_ct_CC = gcc
@@ -207,7 +207,7 @@ host_vendor = pc
 htmldir = ${docdir}
 includedir = ${prefix}/include
 infodir = ${datarootdir}/info
-install_sh = ${SHELL} /home/al/IJE/Ankhnowledge/config/install-sh
+install_sh = ${SHELL} /home/arthur/Documentos/Workspace/Disciplinas/Jogos/Ankhnowledge/config/install-sh
 libdir = ${exec_prefix}/lib
 libexecdir = ${exec_prefix}/libexec
 localedir = ${datarootdir}/locale
@@ -236,7 +236,7 @@ top_srcdir = ..
 libitemincludedir = $(includedir)/
 
 # Include files
-include_HEADERS = Animation.h AudioHandler.h Block.h Button.h Character.h FadeHandler.h FadeScreen.h GameManager.h GameObject.h InputManager.h Map.h MainMenuButHandler.h Network.h OptionsController.h SDLBase.h Scene.h SceneLegal.h SceneLogo.h SceneMainMenu.h ScenePhaseOne.h SceneTechnology.h SceneThirdParty.h SceneGameOver.h SceneCredits.h SceneOptions.h SplashScreen.h Tile.h Shape.h Sprite.h Slider.h
+include_HEADERS = Animation.h AudioHandler.h Block.h Button.h Character.h FadeHandler.h FadeScreen.h GameManager.h GameObject.h InputManager.h Map.h MainMenuButHandler.h Network.h OptionsController.h SDLBase.h Scene.h SceneLegal.h SceneLogo.h SceneMainMenu.h ScenePhaseOne.h SceneTechnology.h SceneThirdParty.h SceneGameOver.h SceneCredits.h SceneOptions.h SplashScreen.h Tile.h Shape.h Sprite.h Slider.h TextObject.h
 all: config.h
 	$(MAKE) $(AM_MAKEFLAGS) all-am
 

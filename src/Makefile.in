@@ -314,7 +314,9 @@ dist_Ankhnowledge_DATA = ../$(PACKAGE)/resources/images/adam.png \
 	../$(PACKAGE)/resources/images/adam_spr.png \
 	../$(PACKAGE)/resources/images/suti_spr.png \
 	../$(PACKAGE)/resources/images/slider_button.png \
-	../$(PACKAGE)/resources/images/slider_bar.png
+	../$(PACKAGE)/resources/images/slider_bar.png \
+	../$(PACKAGE)/resources/images/credit_background.png \
+	../$(PACKAGE)/resources/images/credit_text.png
 Ankhnowledgedir = /usr/local/$(PACKAGE)/resources/images
 
 # Libraries needed to build program

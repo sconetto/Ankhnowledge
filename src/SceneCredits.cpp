@@ -14,24 +14,25 @@ SceneCredits::SceneCredits(string sceneName) : Scene (sceneName)  {
 }
 
 SceneCredits::~SceneCredits() {
-	delete this->text;
+
 }
 
 void SceneCredits::Enter()
 {
+	this->splashSprite = new Sprite(SDLBase::imagePath + "credit_background.png");
+	this->textSprite = new Sprite(SDLBase::imagePath + "credit_text.png");
 
-	this->splashSprite = new Sprite(SDLBase::imagePath + "background.png");
-	this->textSprite = new Sprite(SDLBase::imagePath + "credittext.png");
 
-	this->text = new TextObject(textSprite, 200, 100);
+	this->text = new TextObject(textSprite, 0, 300);
 
 	string nextScene = "SceneLogo";
 
 	SplashScreen * splashScreen =  new SplashScreen(splashSprite, nextScene);
 	this->addGameObject(splashScreen);
 	this->addGameObject(text);
+	
 
-	GameManager::fadeScreen->fadeOut(0,6);
+	GameManager::fadeScreen->fadeOut(0,2);
 }
 
 void SceneCredits::Exit()

@@ -143,13 +143,13 @@ DATA = $(dist_Ankhnowledge_DATA)
 ETAGS = etags
 CTAGS = ctags
 DISTFILES = $(DIST_COMMON) $(DIST_SOURCES) $(TEXINFOS) $(EXTRA_DIST)
-ACLOCAL = ${SHELL} /home/al/branch/Ankhnowledge/config/missing --run aclocal-1.11
+ACLOCAL = ${SHELL} /home/arthur/Documentos/Workspace/Disciplinas/Jogos/Ankhnowledge/config/missing --run aclocal-1.11
 AMTAR = $${TAR-tar}
 AR = ar
-AUTOCONF = ${SHELL} /home/al/branch/Ankhnowledge/config/missing --run autoconf
-AUTOHEADER = ${SHELL} /home/al/branch/Ankhnowledge/config/missing --run autoheader
-AUTOMAKE = ${SHELL} /home/al/branch/Ankhnowledge/config/missing --run automake-1.11
-AWK = mawk
+AUTOCONF = ${SHELL} /home/arthur/Documentos/Workspace/Disciplinas/Jogos/Ankhnowledge/config/missing --run autoconf
+AUTOHEADER = ${SHELL} /home/arthur/Documentos/Workspace/Disciplinas/Jogos/Ankhnowledge/config/missing --run autoheader
+AUTOMAKE = ${SHELL} /home/arthur/Documentos/Workspace/Disciplinas/Jogos/Ankhnowledge/config/missing --run automake-1.11
+AWK = gawk
 CC = gcc
 CCDEPMODE = depmode=gcc3
 CFLAGS = -g -O2
@@ -188,7 +188,7 @@ LTLIBOBJS =
 LT_CURRENT = 0
 LT_RELEASE = 0.0.1
 LT_REVISION = 0
-MAKEINFO = ${SHELL} /home/al/branch/Ankhnowledge/config/missing --run makeinfo
+MAKEINFO = ${SHELL} /home/arthur/Documentos/Workspace/Disciplinas/Jogos/Ankhnowledge/config/missing --run makeinfo
 MANIFEST_TOOL = :
 MKDIR_P = /bin/mkdir -p
 NM = /usr/bin/nm -B
@@ -211,10 +211,10 @@ SET_MAKE =
 SHELL = /bin/bash
 STRIP = strip
 VERSION = 0.0.1
-abs_builddir = /home/al/branch/Ankhnowledge/src
-abs_srcdir = /home/al/branch/Ankhnowledge/src
-abs_top_builddir = /home/al/branch/Ankhnowledge
-abs_top_srcdir = /home/al/branch/Ankhnowledge
+abs_builddir = /home/arthur/Documentos/Workspace/Disciplinas/Jogos/Ankhnowledge/src
+abs_srcdir = /home/arthur/Documentos/Workspace/Disciplinas/Jogos/Ankhnowledge/src
+abs_top_builddir = /home/arthur/Documentos/Workspace/Disciplinas/Jogos/Ankhnowledge
+abs_top_srcdir = /home/arthur/Documentos/Workspace/Disciplinas/Jogos/Ankhnowledge
 ac_config_aux_dir = 
 ac_ct_AR = ar
 ac_ct_CC = gcc
@@ -245,7 +245,7 @@ host_vendor = pc
 htmldir = ${docdir}
 includedir = ${prefix}/include
 infodir = ${datarootdir}/info
-install_sh = ${SHELL} /home/al/branch/Ankhnowledge/config/install-sh
+install_sh = ${SHELL} /home/arthur/Documentos/Workspace/Disciplinas/Jogos/Ankhnowledge/config/install-sh
 libdir = ${exec_prefix}/lib
 libexecdir = ${exec_prefix}/libexec
 localedir = ${datarootdir}/locale
@@ -314,7 +314,9 @@ dist_Ankhnowledge_DATA = ../$(PACKAGE)/resources/images/adam.png \
 	../$(PACKAGE)/resources/images/adam_spr.png \
 	../$(PACKAGE)/resources/images/suti_spr.png \
 	../$(PACKAGE)/resources/images/slider_button.png \
-	../$(PACKAGE)/resources/images/slider_bar.png
+	../$(PACKAGE)/resources/images/slider_bar.png \
+	../$(PACKAGE)/resources/images/credit_background.png \
+	../$(PACKAGE)/resources/images/credit_text.png
 Ankhnowledgedir = /usr/local/$(PACKAGE)/resources/images
 
 # Libraries needed to build program

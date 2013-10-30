@@ -18,6 +18,7 @@ class TextObject : public GameObject {
 
 	private:
 		Sprite * sprite;
+		Animation * currentAnimation;
 };
 
 #endif 

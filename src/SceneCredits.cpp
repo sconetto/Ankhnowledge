@@ -1,10 +1,3 @@
-/*
- * SceneCredits.cpp
- *
- *  Created on: Oct 28, 2013
- *      Author: al
- */
-
 #include "SceneCredits.h"
 #include "TextObject.h"
 
@@ -23,9 +16,9 @@ void SceneCredits::Enter()
 	this->textSprite = new Sprite(SDLBase::imagePath + "credit_text.png");
 
 
-	this->text = new TextObject(textSprite, 0, 300);
+	this->text = new TextObject(textSprite, 0, 135);
 
-	string nextScene = "SceneLogo";
+	string nextScene = "SceneMainMenu";
 
 	SplashScreen * splashScreen =  new SplashScreen(splashSprite, nextScene);
 	this->addGameObject(splashScreen);

@@ -125,12 +125,12 @@ DATA = $(dist_Ankhnowledge_DATA)
 ETAGS = etags
 CTAGS = ctags
 DISTFILES = $(DIST_COMMON) $(DIST_SOURCES) $(TEXINFOS) $(EXTRA_DIST)
-ACLOCAL = ${SHELL} /home/makoto/Desktop/Entrega/Ankhnowledge/config/missing --run aclocal-1.11
+ACLOCAL = ${SHELL} /home/makoto/Desktop/Ultima/Ankhnowledge/config/missing --run aclocal-1.11
 AMTAR = $${TAR-tar}
 AR = ar
-AUTOCONF = ${SHELL} /home/makoto/Desktop/Entrega/Ankhnowledge/config/missing --run autoconf
-AUTOHEADER = ${SHELL} /home/makoto/Desktop/Entrega/Ankhnowledge/config/missing --run autoheader
-AUTOMAKE = ${SHELL} /home/makoto/Desktop/Entrega/Ankhnowledge/config/missing --run automake-1.11
+AUTOCONF = ${SHELL} /home/makoto/Desktop/Ultima/Ankhnowledge/config/missing --run autoconf
+AUTOHEADER = ${SHELL} /home/makoto/Desktop/Ultima/Ankhnowledge/config/missing --run autoheader
+AUTOMAKE = ${SHELL} /home/makoto/Desktop/Ultima/Ankhnowledge/config/missing --run automake-1.11
 AWK = mawk
 CC = gcc
 CCDEPMODE = depmode=gcc3
@@ -170,7 +170,7 @@ LTLIBOBJS =
 LT_CURRENT = 0
 LT_RELEASE = 0.0.1
 LT_REVISION = 0
-MAKEINFO = ${SHELL} /home/makoto/Desktop/Entrega/Ankhnowledge/config/missing --run makeinfo
+MAKEINFO = ${SHELL} /home/makoto/Desktop/Ultima/Ankhnowledge/config/missing --run makeinfo
 MANIFEST_TOOL = :
 MKDIR_P = /bin/mkdir -p
 NM = /usr/bin/nm -B
@@ -193,10 +193,10 @@ SET_MAKE =
 SHELL = /bin/bash
 STRIP = strip
 VERSION = 0.0.1
-abs_builddir = /home/makoto/Desktop/Entrega/Ankhnowledge/src
-abs_srcdir = /home/makoto/Desktop/Entrega/Ankhnowledge/src
-abs_top_builddir = /home/makoto/Desktop/Entrega/Ankhnowledge
-abs_top_srcdir = /home/makoto/Desktop/Entrega/Ankhnowledge
+abs_builddir = /home/makoto/Desktop/Ultima/Ankhnowledge/src
+abs_srcdir = /home/makoto/Desktop/Ultima/Ankhnowledge/src
+abs_top_builddir = /home/makoto/Desktop/Ultima/Ankhnowledge
+abs_top_srcdir = /home/makoto/Desktop/Ultima/Ankhnowledge
 ac_config_aux_dir = 
 ac_ct_AR = ar
 ac_ct_CC = gcc
@@ -227,7 +227,7 @@ host_vendor = unknown
 htmldir = ${docdir}
 includedir = ${prefix}/include
 infodir = ${datarootdir}/info
-install_sh = ${SHELL} /home/makoto/Desktop/Entrega/Ankhnowledge/config/install-sh
+install_sh = ${SHELL} /home/makoto/Desktop/Ultima/Ankhnowledge/config/install-sh
 libdir = ${exec_prefix}/lib
 libexecdir = ${exec_prefix}/libexec
 localedir = ${datarootdir}/locale
@@ -267,6 +267,17 @@ libitem_la_LIBADD = -lSDL -lSDLmain -lSDL_image -lSDL_ttf -lSDL_net -lSDL_mixer
 # Program description
 Ankhnowledge_SOURCES = main.cpp
 dist_Ankhnowledge_DATA = ../$(PACKAGE)/resources/intro.ogg \
+	../$(PACKAGE)/resources/boost.wav \
+	../$(PACKAGE)/resources/creditos.ogg \
+	../$(PACKAGE)/resources/empurrar_bloco.wav \
+	../$(PACKAGE)/resources/menucancel.wav \
+	../$(PACKAGE)/resources/menuclick.wav \
+	../$(PACKAGE)/resources/passar_turno.ogg \
+	../$(PACKAGE)/resources/tela_de_opcoes.ogg \
+	../$(PACKAGE)/resources/tela_de_selecao_de_mapas.ogg \
+	../$(PACKAGE)/resources/tema.ogg \
+	../$(PACKAGE)/resources/youlost.ogg \
+	../$(PACKAGE)/resources/youwon.wav \
 	../$(PACKAGE)/resources/sand_action.wav \
 	../$(PACKAGE)/resources/dig_action.wav \
 	../$(PACKAGE)/resources/main_menu.ogg \
@@ -328,6 +339,10 @@ dist_Ankhnowledge_DATA = ../$(PACKAGE)/resources/intro.ogg \
 	../$(PACKAGE)/resources/endturn_3.png \
 	../$(PACKAGE)/resources/whitesquare.png \
 	../$(PACKAGE)/resources/fase1.ogg \
+	../$(PACKAGE)/resources/fase2.ogg \
+	../$(PACKAGE)/resources/fase3.ogg \
+	../$(PACKAGE)/resources/fase4.ogg \
+	../$(PACKAGE)/resources/fase5.ogg \
 	../$(PACKAGE)/resources/title.ogg \
 	../$(PACKAGE)/resources/tileMap.txt \
 	../$(PACKAGE)/resources/left.png \

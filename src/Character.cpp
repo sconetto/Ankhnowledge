@@ -447,6 +447,11 @@ void Character::moveUpdate(InputManager * input, Direction dir)
 			if(block->getType() == "BlockWater")
 			{
 				changeCurrentTile(nextTile);
+				
+				AudioHandler * audio = AudioHandler::getInstance();
+			 	audio->setEffect("boost.wav");
+			 	audio->playEffect(0);
+
 				if(dir != none && !performingAction)
 				{
 					move(dir);
@@ -456,9 +461,7 @@ void Character::moveUpdate(InputManager * input, Direction dir)
 				nextTile->setBlock(0);
 				setStamina(getStamina() + 2);
 				this->initialStamina += 2;
-				AudioHandler * audio = AudioHandler::getInstance();
-			 	audio->setEffect("boost.wav");
-			 	audio->playEffect(0);
+				
 
 				//delete block;
 			}

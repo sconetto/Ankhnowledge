@@ -2,11 +2,10 @@ cmake_minimum_required(VERSION 3.0.2)
 project(ankhnowledge LANGUAGES CXX)
 
 
-
 # Set directory folders
 set (PROJECT_INCLUDE_DIR "${PROJECT_SOURCE_DIR}/include")
 set (PROJECT_SRC_DIR     "${PROJECT_SOURCE_DIR}/src")
-set (PROJECT_ASSETS_DIR  "${PROJECT_SOURCE_DIR}/assets")
+set (PROJECT_ANKHNOWLEDGE_DIR  "${PROJECT_SOURCE_DIR}/Ankhnowledge")
 
 # Gets the list of files inside the src directory
 file(GLOB_RECURSE SOURCES "${PROJECT_SRC_DIR}/*.cpp"
@@ -39,13 +38,13 @@ set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${COMPILE_FLAGS}")
 
 
 
-
 #### Executable ####
 
 add_executable(ankhnowledge ${SOURCES})
 
+
 target_link_libraries(ankhnowledge
-                      SDL2 SDL2_image SDL2_ttf SDL2_mixer)
+                      libtool autoconf automake libsdl-image1.2 libsdl-image1.2-dev libsdl-ttf2.0-0 libsdl-ttf2.0-dev libsdl-mixer1.2 libsdl-mixer1.2-dev libsdl-net1.2 libsdl-net1.2-dev)
 
 
 
